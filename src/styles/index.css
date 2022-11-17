@@ -1,0 +1,60 @@
+.bg-main {
+  height: 100vh;
+  background: rgb(255,209,213);
+  background: linear-gradient(90deg, rgba(255,209,213,1) 33%, rgba(112,236,244,1) 81%);
+}
+
+.bg-p{
+  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(20px);
+  /*box-shadow: 0 5px 15px 2px rgba(0,0,0,0.15);
+  255, 255, 255, 0.1*/
+}
+
+.title-gradient{
+  font-size: 110px;
+  font-family: 'Yellowtail', cursive;
+  color: white;
+
+  -webkit-text-stroke: 2px rgba(0,0,0,0.15)
+}
+
+.title-gradient:hover{
+  animation: expand 0.5 ease forwards;
+  color: transparent;
+  background: linear-gradient(270deg,
+  #FFD4DC 0%, #735F63 100%
+    );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@keyframes expand {
+  0% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 325%;
+    background-position: -10em -4em;
+  }
+}
+
+.bg-s{
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 5px 15px 2px rgba(0,0,0,0.15);
+}
+
+.card-img-top{
+  height: 16rem;
+  object-fit: cover;  /* Esta propiedad sirve para ajustar una imagen al tamaño indicado sin deformarse*/
+}
+
+
+/* color negro transparente para el fondo,  */
