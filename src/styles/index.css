@@ -1,11 +1,11 @@
 .bg-main {
   height: 100vh;
-  background: rgb(255,209,213);
-  background: linear-gradient(90deg, rgba(255,209,213,1) 33%, rgba(112,236,244,1) 81%);
+  background: #FFD8CB;
+  /*background: linear-gradient(90deg, rgba(255,209,213,1) 33%, rgba(112,236,244,1) 81%);*/
 }
 
 .bg-p{
-  background-color: rgba(0,0,0,0.2);
+  /*background-color: rgba(0,0,0,0.2);*/
   backdrop-filter: blur(20px);
   /*box-shadow: 0 5px 15px 2px rgba(0,0,0,0.15);
   255, 255, 255, 0.1*/
