@@ -1,6 +1,10 @@
-.bg-main {
+body {
   height: 100vh;
-  background-color: #F6CFCC;
+  background-color: #F8ECEA;
+}
+
+menu{
+  margin: 0;
 }
 
 .title-gradient{
@@ -10,42 +14,19 @@
   -webkit-text-stroke: 3px rgba(0,0,0,0.15) /*borde*/
 }
 
-/*.title-gradient:hover{
-  animation: expand 0.5 ease forwards;
-  color: transparent;
-  background: linear-gradient(90deg, #F8ECEA 0%,#706763 100%);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-@keyframes expand {
-  0% {
-    background-size: 50%;
-    background-position: 0 0;
-  }
-  20% {
-    background-size: 55%;
-    background-position: 0 1em;
-  }
-  100% {
-    background-size: 325%;
-    background-position: -10em -4em;
-  }
-}*/
-
-.base-container{
-  height: 20% !important; 
-}
-
-.bg-m-opacity{
-  background-color: rgb(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
+.bg-nav{
+  background-color: #58453e;
   box-shadow: 0 0 15px 2px rgba(0,0,0,0.15);
 }
 
-.bg-c-opacity{
-  background-color: rgba(248, 236, 234, 0.80);
+.bg-m{
+  background-color: rgb(240, 129, 121);
+  backdrop-filter: blur(80px);
+  box-shadow: 0 0 15px 2px rgba(0,0,0,0.15);
+}
+
+.bg-c{
+  background-color: rgb(246, 235, 234);
   backdrop-filter: blur(20px);
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
 }
