@@ -12,7 +12,7 @@ export const SearchAll = () => {
   const { res: all, error, loading } = useGetData(apiUrl)
 
   return (
-    <>
+/*     <>
       <section className='container'>
         <h1>Aquí esta el SearchAll</h1>
         <div className='row gy-4'>
@@ -21,11 +21,11 @@ export const SearchAll = () => {
               <Card data={album} />
             </div>
           ))}
-        </div>
-        {
-          // console.log(all?.albums?.items)
-        }
+        </div> 
       </section>
-    </>
+    </> */
+
+    //console.log(all?.albums?.items?.map)
+
   )
 }

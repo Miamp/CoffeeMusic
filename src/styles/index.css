@@ -1,40 +1,136 @@
 body {
   height: 100vh;
-  background-color: #F8ECEA;
+  background-color: #F6F8EA;
 }
 
-menu{
-  margin: 0;
-}
-
-.title-gradient{
+.title-gradient {
   font-size: 100px;
   font-family: 'Yellowtail', cursive;
   color: #706763;
-  -webkit-text-stroke: 3px rgba(0,0,0,0.15) /*borde*/
+  -webkit-text-stroke: 3px rgba(0, 0, 0, 0.15)
 }
 
-.bg-nav{
+menu {
+  margin: 0;
+}
+
+.bg-nav {
+  height: 95px;
   background-color: #58453e;
-  box-shadow: 0 0 15px 2px rgba(0,0,0,0.15);
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.15);
 }
 
-.bg-m{
+span {
+  position: relative;
+  display: inline-block;
+  margin: 30px 10px;
+}
+
+.balloon {
+  display: inline-block;
+  width: 200px;
+  height: 45px;
+  padding: 10px 0 10px 15px;
+  font-family: "Open Sans", sans;
+  font-weight: 400;
+  color: rgb(240, 129, 121);
+  background: rgb(240, 129, 121);
+  border: 0;
+  border-radius: 15px;
+  outline: 0;
+  text-indent: 60px;
+  transition: all 0.3s ease-in-out;
+}
+.balloon::-webkit-input-placeholder {
+  color: #efefef;
+  text-indent: 0;
+  font-weight: 300;
+}
+.balloon + label {
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  bottom: 8px;
+  padding: 5px 15px;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(19, 74, 70, 0);
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+  background: rgba(122, 184, 147, 0);
+}
+.balloon + label:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 100%;
+  left: 50%;
+  margin-left: -3px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid rgba(122, 184, 147, 0);
+  transition: all 0.3s ease-in-out;
+}
+.balloon:focus, .balloon:active {
+  color: white;
+  text-indent: 0;
+  background: #58453e;
+}
+.balloon:focus::-webkit-input-placeholder, .balloon:active::-webkit-input-placeholder {
+  color: white;
+}
+.balloon:focus + label, .balloon:active + label {
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(19, 74, 70, .4);
+  background: rgb(240, 129, 121);
+  transform: translateY(-40px);
+}
+.balloon:focus + label:after, .balloon:active + label:after {
+  border-top: 4px solid rgb(240, 129, 121);
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.icon-effect:hover {
+  background-color: rgb(240, 129, 121);
+  border-radius: 15px;
+  padding: 2px;
+}
+
+.m-left {
+  color: #ffff;
+  font-family: 'Imprima';
+  font-size: 21px;
   background-color: rgb(240, 129, 121);
   backdrop-filter: blur(80px);
-  box-shadow: 0 0 15px 2px rgba(0,0,0,0.15);
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.15);
+  padding-top: 5px;
+  margin: 0px;
 }
 
-.bg-c{
-  background-color: rgb(246, 235, 234);
+.m-left :active {
+  color: rgb(240, 129, 121);
+  background-color: #ffff;
+
+}
+
+.bg-c {
+  background-color: #FEFDFC;
   backdrop-filter: blur(20px);
-  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-.card-img-top{
+.card-img-top {
   height: 16rem;
-  object-fit: cover;  /* Esta propiedad sirve para ajustar una imagen al tamaño indicado sin deformarse*/
+  object-fit: cover;
+  /* Esta propiedad sirve para ajustar una imagen al tamaño indicado sin deformarse*/
 }
-
-
-/* color negro transparente para el fondo,  */

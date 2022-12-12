@@ -3,8 +3,14 @@ export default function App () {
     <div className='container-fluid'>
       <div className='container'>
         <div className='row justify-content-center align-items-center'>
-          <div className='col-3 bg-m'>
-            <h5>Columna de menu</h5>
+          <div className='col-3 text-center m-left'>
+            <p>Artista</p>
+            <p>Albums</p>
+            <p>Canciones</p>
+            <p>Géneros</p>
+            <p>Playlist</p>
+            <p>Podcast</p>
+            <p>Episodios</p>
           </div>
           <div className='col-8 bg-c'>
             <h5>Columna de contenido</h5>
