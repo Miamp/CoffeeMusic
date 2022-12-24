@@ -16,7 +16,7 @@ export default function Menu () {
               <div className='col-4'>
                 <form>
                   <span>
-                    <input type='search' className='balloon' name='search' ref={inputRef} /><label for='Buscar'><img src='https://img.icons8.com/wired/25/FFFFFF/search.png' />  Buscar</label>
+                    <input type='search' className='search' name='search' ref={inputRef} /><label for='Buscar'><img src='https://img.icons8.com/wired/25/FFFFFF/search.png' />  Buscar</label>
                   </span>
                   <NavLink to='/home'><img className='icon-effect' src='https://img.icons8.com/wired/35/FFFFFF/home-page.png' /></NavLink>
                 </form>
