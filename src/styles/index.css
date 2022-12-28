@@ -10,6 +10,10 @@ body {
   -webkit-text-stroke: 3px rgba(0, 0, 0, 0.15)
 }
 
+.text-center {
+margin: 5px;
+}
+
 menu {
   margin: 0;
 }
@@ -41,12 +45,14 @@ span {
   text-indent: 60px;
   transition: all 0.3s ease-in-out;
 }
+
 .search::-webkit-input-placeholder {
   color: #efefef;
   text-indent: 0;
   font-weight: 300;
 }
-.search + label {
+
+.search+label {
   display: inline-block;
   position: absolute;
   top: 8px;
@@ -62,7 +68,8 @@ span {
   border-radius: 3px;
   background: rgba(122, 184, 147, 0);
 }
-.search + label:after {
+
+.search+label:after {
   position: absolute;
   content: "";
   width: 0;
@@ -75,21 +82,29 @@ span {
   border-top: 3px solid rgba(122, 184, 147, 0);
   transition: all 0.3s ease-in-out;
 }
-.search:focus, .search:active {
+
+.search:focus,
+.search:active {
   color: white;
   text-indent: 0;
   background: #58453e;
 }
-.search:focus::-webkit-input-placeholder, .search:active::-webkit-input-placeholder {
+
+.search:focus::-webkit-input-placeholder,
+.search:active::-webkit-input-placeholder {
   color: white;
 }
-.search:focus + label, .search:active + label {
+
+.search:focus+label,
+.search:active+label {
   color: #fff;
   text-shadow: 0 1px 0 rgba(19, 74, 70, .4);
   background: rgb(240, 129, 121);
   transform: translateY(-40px);
 }
-.search:focus + label:after, .search:active + label:after {
+
+.search:focus+label:after,
+.search:active+label:after {
   border-top: 4px solid rgb(240, 129, 121);
 }
 
@@ -97,7 +112,7 @@ input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
-    display: none;
+  display: none;
 }
 
 .icon-effect:hover {
@@ -118,7 +133,8 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 0px;
 }
 
-.m-left :active, .m-left :hover {
+.m-left :active,
+.m-left :hover {
   color: rgb(240, 129, 121);
   background-color: #ffff;
   border-top-left-radius: 5px;
@@ -126,40 +142,63 @@ input[type="search"]::-webkit-search-results-decoration {
 
 }
 
-.footer-content{
+.footer-content {
   color: #fff;
   font-family: 'Imprima';
-  font-size: 18px;
+  font-size: 19px;
   padding: 10px;
-}
-
-p {
-  text-align: center!important;
 }
 
 .creador {
   width: max-content;
   background-color: rgb(240, 129, 121);
-  text-align: center !important;
 }
 
 footer p a {
-  color: #fff;
+  color: #ffff;
+  font-size: 17px;
   text-decoration: none;
 }
 
-a:hover{
-  color:rgb(240, 129, 121); 
+footer p a:hover {
+  color: rgb(240, 129, 121);
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .bg-c {
   background-color: #FEFDFC;
   backdrop-filter: blur(20px);
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  overflow: auto;
+}
+
+.card {
+  width: 14rem;
+  height: 23rem;
+
+}
+
+.card:hover{
+  border-color: rgb(240, 129, 121);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
 }
 
 .card-img-top {
-  height: 16rem;
+  width: 13rem;
+  height: 15rem;
   object-fit: cover;
-  /* Esta propiedad sirve para ajustar una imagen al tamaño indicado sin deformarse*/
+  align-self: center;
+}
+
+.card-title {
+  font-family: 'Inconsolata';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card-text {
+  font-family: 'Imprima';
+  font-size: 15px;
 }

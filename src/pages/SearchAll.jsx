@@ -12,20 +12,19 @@ export const SearchAll = () => {
   const { res: all, error, loading } = useGetData(apiUrl)
 
   return (
-/*     <>
+    <>
       <section className='container'>
-        <h1>Aquí esta el SearchAll</h1>
-        <div className='row gy-4'>
+        <div className='row gx-2 gy-3'>
           {all?.albums?.items?.map((album, index) => (
-            <div key={index} className='col-12 col-md-6 col-lg-3'>
+            <div key={index} className='col-12 col-md-8 col-lg-4'>
               <Card data={album} />
             </div>
           ))}
-        </div> 
+        </div>
       </section>
-    </> */
+    </>
 
-    //console.log(all?.albums?.items?.map)
+  // console.log(all?.albums?.items?.map)
 
   )
 }

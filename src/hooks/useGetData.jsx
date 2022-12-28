@@ -4,11 +4,9 @@ export default function useGetData (apiUrl) {
   const [res, setRes] = useState([])
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(true)
-  // const { signal, abort } = new AbortController()
 
   const options = {
     method: 'GET',
-    // signal,
     headers: {
       'X-RapidAPI-Key': '31b4076723msh7d00975ce3f275ep185057jsn947f2360aae8',
       'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
@@ -29,11 +27,7 @@ export default function useGetData (apiUrl) {
   }
   useEffect(() => {
     getData()
-
-    // return () => abort()
   }, [apiUrl])
-
-  // console.log(res);
 
   return { res, error, loading }
 }
